@@ -1,0 +1,54 @@
+body {
+	background-color: rgba(8, 39, 86, 255);
+}
+
+div {
+	margin-top: 50px;
+	height: 93vh;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+form {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	justify-content: center;
+	align-content: end;
+}
+
+h1 {
+	font-family: "Raleway", sans-serif;
+	color: white;
+	font-size: 50px;
+	grid-column: 2/3;
+	align-self: end;
+	margin-left: 155px;
+}
+
+input {
+	margin: 8px;
+	padding: 13px;
+	border-radius: 7px 7px 7px 7px;
+	border: 34px;
+	border-color: rgba(1, 21, 58, 255);
+	border: 10px;
+	width: 400px;
+	height: 33px;
+	background-color: rgba(6, 26, 59, 255);
+	font-size: 15px;
+}
+
+button {
+	width: 425px;
+	height: 55px;
+	border-radius: 7px;
+	background-color: rgba(74, 119, 212, 255);
+	border-color: rgba(74, 119, 212, 255);
+	color: white;
+	font-family: "Arial";
+	font-weight: bolder;
+	font-size: 20px;
+	text-shadow: 1px 1px #3c4a5e;
+	margin: 9px;
+}

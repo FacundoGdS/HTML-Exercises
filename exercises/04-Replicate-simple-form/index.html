@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style type="text/css">
+			table,
+			th,
+			td {
+				border: solid 1px;
+				border-top-color: grey;
+				border-right-color: gainsboro;
+				border-bottom-color: gainsboro;
+				border-left-color: grey;
+			}
+			#exterior {
+				border-top-color: gainsboro;
+				border-right-color: grey;
+				border-bottom-color: grey;
+				border-left-color: gainsboro;
+			}
+			thead tr:nth-child(1) {
+				background-color: rgba(206, 204, 251, 255);
+			}
+			th,
+			td {
+				width: 170px;
+			}
+			input::-webkit-calendar-picker-indicator {
+				opacity: 100;
+			}
+			#button {
+				background-color: rgba(233, 233, 233, 255);
+				border-style: outset;
+				padding: 1px;
+				width: 150px;
+				height: 15px;
+				margin-left: 96px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table id="exterior">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td>Name</td>
+						<td><input type="text" id="name" value="" /></td>
+					</tr>
+					<tr>
+						<td>Sex</td>
+						<td>
+							<input type="radio" name="gender" value="male" />Male <br />
+							<input type="radio" name="gender" value="female" />Female<br />
+						</td>
+					</tr>
+					<tr>
+						<td>Eye color</td>
+						<td>
+							<input list="eye_color" name="eyecolor" id="eyecolor" />
+
+							<datalist id="eye_color">
+								<option value="Green"></option>
+								<option value="Blue"></option>
+								<option value="Brown"></option>
+								<option value="Black"></option>
+								<option value="Grey"></option>
+							</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td>Check all that apply</td>
+						<td>
+							<input type="checkbox" id="overtall" value="6feet" /> <label for="overtall">Over 6 feet tall</label><br />
+							<input type="checkbox" id="overpounds" value="200p" />
+							<label for="overpounds">Over 200 pounds</label>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<div>
+								Describe your athletic ability:<br />
+								<div><textarea name="describe" id="describes" cols="45" rows="6"></textarea></div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2"><div id="button">&nbsp;&nbsp;Enter my information</div></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
 </html>
